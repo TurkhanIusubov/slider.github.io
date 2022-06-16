@@ -1,11 +1,22 @@
 const sliderArea = document.getElementById('slider-area')
-
+const slider_content = document.querySelectorAll('.slider-content')
 const rightArr = document.getElementById('right-arr')
 const leftArr = document.getElementById('left-arr')
 
 sliderArea.scrollTo(sliderArea.scrollWidth,0)
 
 var sliderAreaChildrens = sliderArea.childNodes
+
+console.log(slider_content.length);
+
+
+if(slider_content.length > 3){
+    sliderArea.style.maxWidth = '1200px'
+    // sliderArea.style.backgroundColor = 'red'
+} else {
+    sliderArea.style.maxWidth = '850px'
+    // sliderArea.style.backgroundColor = 'blue'
+}
 
 function createSlideContentPre(x){
     const slideDiv = document.createElement('div')
