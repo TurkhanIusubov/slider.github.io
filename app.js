@@ -1,5 +1,7 @@
 const sliderArea = document.getElementById('slider-area')
 const slider_content = document.querySelectorAll('.slider-content')
+const slideContainer = document.querySelector('.slideContainer')
+
 const rightArr = document.getElementById('right-arr')
 const leftArr = document.getElementById('left-arr')
 
@@ -12,9 +14,11 @@ console.log(slider_content.length);
 
 if(slider_content.length > 3){
     sliderArea.style.maxWidth = '1200px'
+    slideContainer.style.maxWidth = '1200px'
     // sliderArea.style.backgroundColor = 'red'
 } else {
     sliderArea.style.maxWidth = '850px'
+    slideContainer.style.maxWidth = '947px'
     // sliderArea.style.backgroundColor = 'blue'
 }
 
