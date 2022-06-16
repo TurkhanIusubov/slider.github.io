@@ -14,7 +14,14 @@ console.log(slider_content.length);
 
 if(slider_content.length > 3){
     sliderArea.style.maxWidth = '1200px'
-    slideContainer.style.maxWidth = '1200px'
+    slideContainer.style.maxWidth = '1297px'
+    // if(screen.width > 768){
+    //     sliderArea.style.maxWidth = '1200px'
+    //     slideContainer.style.maxWidth = '1297px'
+    // } else {
+    //     sliderArea.style.maxWidth = '768px'
+    //     // slideContainer.style.maxWidth = '1297px'
+    // }
     // sliderArea.style.backgroundColor = 'red'
 } else {
     sliderArea.style.maxWidth = '850px'
@@ -53,10 +60,10 @@ rightArr.addEventListener('click', () => {
     rightArr.setAttribute('style', 'pointer-events: none;')
     
     sliderArea.children[sliderArea.children.length - 2].setAttribute('style', ' position: relative; z-index: 1; object-fit:cover; height: 300px; margin-right: 0;')
-    sliderArea.children[sliderArea.children.length - 2].children[0].setAttribute('style', 'filter: blur(0px); width: 100%;')
+    sliderArea.children[sliderArea.children.length - 2].children[0].setAttribute('style', 'filter: blur(0px); width: 100%; ')
 
     sliderArea.children[sliderArea.children.length - 1].setAttribute('style', ' position: relative; z-index: 0; height: 265px; min-width: 0px !important; margin:0px;')
-    sliderArea.children[sliderArea.children.length - 1].children[0].setAttribute('style', 'filter: blur(10px) grayscale(100); width: 320px;')
+    sliderArea.children[sliderArea.children.length - 1].children[0].setAttribute('style', 'filter: blur(10px) grayscale(100); width: 80%; gap: 0px; margin:0;')
     
     
     setTimeout(() => {
@@ -75,7 +82,7 @@ rightArr.addEventListener('click', () => {
 
 leftArr.addEventListener('click', () => {
     
-    sliderArea.children[sliderArea.children.length - 1].setAttribute('style', 'height: 265px; min-width: 350px;')
+    sliderArea.children[sliderArea.children.length - 1].setAttribute('style', 'height: 265px; min-width: 350px; ')
     sliderArea.children[sliderArea.children.length - 1].children[0].setAttribute('style', 'filter: blur(10px) grayscale(100); width: 320;')
     createSlideContentAppe(sliderArea.children[0].children[0].src)
     

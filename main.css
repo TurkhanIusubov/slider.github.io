@@ -82,4 +82,23 @@ body {
   width: 100%;
   height: 300px;
   filter: blur(0px) grayscale(0);
+}
+@media (max-width: 768px) {
+  .container .slideContainer {
+    gap: 5px;
+  }
+  .container .slideContainer .leftarr {
+    right: 310px;
+  }
+  .container .slideContainer .rightarr {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+  }
+  .container .slideContainer .arrow svg {
+    background-color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
 }/*# sourceMappingURL=main.css.map */
